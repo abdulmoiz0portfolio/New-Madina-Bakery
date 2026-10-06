@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>New Madina Bakery - The King of Rusk | North Nazimabad, Karachi</title>
+  <meta name="description" content="Famous King of Rusk in North Nazimabad, Karachi. Fresh Peanut Rusk, Butter Rusk, Ice Cakes, Chicken Patties, and artisan bakery delights. Order instantly via WhatsApp or Call.">
+  
+  <!-- Anti-AI Slop Typography: Google Fonts Playfair Display & Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,600;0,700;0,800;1,600&display=swap" rel="stylesheet">
+  
+  <!-- Master Stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Top Announcement Bar -->
+  <aside class="announcement-bar" aria-label="Bakery Announcements">
+    <div class="announcement-content">
+      <div class="announcement-info">
+        <span class="announcement-badge">Fresh Oven Dispatch</span>
+        <span>Karachi's Renowned "King of Rusk" Since 1985</span>
+      </div>
+      <div class="announcement-info">
+        <span>⏰ Timings: 6:30 AM to 1:30 AM (Daily)</span>
+        <span>📍 Block M, North Nazimabad</span>
+      </div>
+    </div>
+  </aside>
+
+  <!-- Sticky Site Navigation -->
+  <header class="site-header" role="banner">
+    <div class="nav-container">
+      <a href="#hero" class="brand-link" aria-label="New Madina Bakery Homepage">
+        <span class="brand-title">New Madina Bakery</span>
+        <span class="brand-subtitle">The King of Rusk</span>
+      </a>
+
+      <nav aria-label="Main Navigation">
+        <ul class="nav-links">
+          <li><a href="#menuCatalog" class="nav-link">Menu Catalog</a></li>
+          <li><a href="#heritage" class="nav-link">Our Heritage</a></li>
+          <li><a href="#locationFooter" class="nav-link">Location & Timings</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-cta-group">
+        <a href="tel:+923000000000" class="btn-header-call" title="Call New Madina Bakery">
+          <span>📞</span> Call: 0300-0000000
+        </a>
+        <button type="button" class="btn-header-cart" id="headerCartBtn" aria-label="View selected items">
+          <span>Items:</span>
+          <span class="cart-count-badge" id="headerCartCount">0</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="mainContent">
+
+    <!-- 1. Hero Section -->
+    <section class="hero-section" id="hero" aria-label="Hero Introduction">
+      <!-- Rectangular high-resolution background image showing bakery aesthetic -->
+      <div class="hero-bg-wrapper">
+        <img 
+          src="https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=1920&q=85" 
+          alt="Artisan oven-baked rusks and breads at New Madina Bakery" 
+          class="hero-bg-image"
+        />
+      </div>
+
+      <!-- Dark overlay (rgba(0,0,0,0.5)) for high text contrast and readability -->
+      <div class="hero-overlay"></div>
+
+      <!-- Hero Content -->
+      <div class="hero-content">
+        <span class="hero-badge-tag">North Nazimabad's Iconic Bakery</span>
+        <h1 class="hero-headline">New Madina Bakery - The King of Rusk</h1>
+        <p class="hero-subheadline">Freshly Baked in North Nazimabad. Order your favorites instantly.</p>
+        <div class="hero-actions">
+          <a href="#menuCatalog" id="btnExploreMenu" class="btn-primary-rect">
+            Explore Menu &rarr;
+          </a>
+          <a href="https://wa.me/923000000000?text=Hello,%20I%20would%20like%20to%20inquire%20about%20New%20Madina%20Bakery%20items." target="_blank" rel="noopener noreferrer" class="btn-secondary-rect">
+            WhatsApp Inquiry
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Trust Pillar Strip -->
+    <section class="trust-bar" aria-label="Key Highlights">
+      <div class="trust-container">
+        <div class="trust-item">
+          <span class="trust-icon">🍞</span>
+          <div class="trust-text">
+            <h4>Double-Baked Rusk</h4>
+            <p>Signature golden crunch</p>
+          </div>
+        </div>
+        <div class="trust-item">
+          <span class="trust-icon">🎂</span>
+          <div class="trust-text">
+            <h4>Dairy Cream Cakes</h4>
+            <p>Fresh daily sponge layers</p>
+          </div>
+        </div>
+        <div class="trust-item">
+          <span class="trust-icon">🥟</span>
+          <div class="trust-text">
+            <h4>Warm Savories</h4>
+            <p>Hot chicken & cheese patties</p>
+          </div>
+        </div>
+        <div class="trust-item">
+          <span class="trust-icon">⚡</span>
+          <div class="trust-text">
+            <h4>Fast Direct Dispatch</h4>
+            <p>Instant WhatsApp & Phone order</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2. Product Catalog (The Menu Layout) -->
+    <section class="catalog-section" id="menuCatalog" aria-labelledby="menuTitle">
+      <div class="section-header-block">
+        <span class="section-tag">Direct From The Oven</span>
+        <h2 class="section-title" id="menuTitle">Our Fresh Daily Menu</h2>
+        <p class="section-description">
+          Select any items below to build your instant order for North Nazimabad home delivery or quick counter pickup.
+        </p>
+      </div>
+
+      <!-- Filter Tabs and Search Bar -->
+      <div class="filter-controls-wrapper">
+        <div class="category-tabs" role="tablist" aria-label="Product Categories">
+          <button type="button" class="category-tab-btn active" data-category="all" role="tab" aria-selected="true">
+            All Items <span class="category-count">18</span>
+          </button>
+          <button type="button" class="category-tab-btn" data-category="rusks" role="tab" aria-selected="false">
+            Breads &amp; Rusks <span class="category-count">5</span>
+          </button>
+          <button type="button" class="category-tab-btn" data-category="cakes" role="tab" aria-selected="false">
+            Cakes <span class="category-count">6</span>
+          </button>
+          <button type="button" class="category-tab-btn" data-category="savory" role="tab" aria-selected="false">
+            Savory &amp; Fast Food <span class="category-count">4</span>
+          </button>
+          <button type="button" class="category-tab-btn" data-category="sweets" role="tab" aria-selected="false">
+            Sweets &amp; Biscuits <span class="category-count">3</span>
+          </button>
+        </div>
+
+        <div class="filter-secondary-bar">
+          <div class="search-input-group">
+            <span class="search-icon-symbol" aria-hidden="true">🔍</span>
+            <input 
+              type="text" 
+              id="searchInput" 
+              class="search-input" 
+              placeholder="Search rusks, cakes, patties, biscuits..." 
+              aria-label="Search menu items"
+            />
+          </div>
+          <div class="results-status-text" id="resultsStatusText">
+            Showing all 18 fresh items
+          </div>
+        </div>
+      </div>
+
+      <!-- Mathematical CSS Grid Product Catalog (Populated dynamically and robustly via app.js) -->
+      <div class="products-grid" id="productsGrid" role="region" aria-live="polite" aria-label="Product Catalog Grid">
+        <!-- Rendered by app.js -->
+        <noscript>
+          <div class="no-results-box">
+            <h3>Please enable JavaScript to view and interact with our interactive menu.</h3>
+            <p>You can also call us directly at 0300-0000000 to order.</p>
+          </div>
+        </noscript>
+      </div>
+    </section>
+
+    <!-- Heritage Feature Section -->
+    <section class="heritage-section" id="heritage" aria-labelledby="heritageHeading">
+      <div class="heritage-container">
+        <div class="heritage-text">
+          <span class="section-tag">Karachi's Living Tradition</span>
+          <h2 id="heritageHeading">Why We Are Celebrated As "The King of Rusk"</h2>
+          <p>
+            For decades in Block M, North Nazimabad, early mornings have begun with the irresistible aroma of double-baked golden rusks rising from the ovens of <strong>New Madina Bakery</strong>.
+          </p>
+          <p>
+            Our secret lies in slow, unhurried baking, pure butter, premium flours, and roasted ingredients like peanuts and whole milk infusions. Every batch is baked to create that iconic hollow crunch that holds its crispness even when immersed in steaming Karak chai.
+          </p>
+          <div class="heritage-metrics">
+            <div class="metric-card">
+              <span class="metric-num">38+</span>
+              <span class="metric-label">Years of Craft</span>
+            </div>
+            <div class="metric-card">
+              <span class="metric-num">6:30 AM</span>
+              <span class="metric-label">Oven Start</span>
+            </div>
+            <div class="metric-card">
+              <span class="metric-num">100%</span>
+              <span class="metric-label">Pure Quality</span>
+            </div>
+          </div>
+        </div>
+        <div class="heritage-image-frame">
+          <img 
+            src="https://images.unsplash.com/photo-1549931319-a545dcf3bc73?auto=format&fit=crop&w=800&q=80" 
+            alt="Artisan bakery craft at New Madina Bakery"
+            loading="lazy"
+          />
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- 3. INTERACTION LOGIC: Sleek Sharp Rectangular FLOATING CHECKOUT PANEL -->
+  <aside 
+    class="floating-checkout-panel" 
+    id="floatingCheckoutPanel" 
+    aria-label="Selected Items and Checkout Panel" 
+    aria-hidden="true"
+  >
+    <!-- Collapsible/Expandable preview list drawer -->
+    <div class="selection-preview-drawer" id="previewDrawer">
+      <div class="selection-tags-list" id="selectionTagsList">
+        <!-- Injected chips -->
+      </div>
+    </div>
+
+    <div class="floating-panel-container">
+      <div class="floating-summary-box">
+        <div class="floating-icon-indicator" aria-hidden="true">
+          🛒
+        </div>
+        <div class="floating-text-info">
+          <!-- Dynamic text summary requested in prompt -->
+          <div class="floating-dynamic-summary" id="floatingDynamicSummary">
+            You have selected 0 items.
+          </div>
+          <div class="floating-subtext" id="floatingSubtext">
+            Ready to place your direct bakery order
+          </div>
+        </div>
+      </div>
+
+      <!-- Two side-by-side rectangular buttons (flexbox, gap: 10px) -->
+      <div class="floating-actions-group">
+        <!-- Button 1 (WhatsApp): Text "Order on WhatsApp", Background #25D366, redirects with encoded items -->
+        <a 
+          href="#" 
+          id="btnWhatsappOrder" 
+          class="btn-whatsapp-rect" 
+          role="button" 
+          aria-label="Order on WhatsApp"
+        >
+          <span>💬</span> Order on WhatsApp
+        </a>
+
+        <!-- Button 2 (Call Now): Text "Call Now", Background #C5832B, triggers tel:+923000000000 -->
+        <a 
+          href="tel:+923000000000" 
+          id="btnCallOrder" 
+          class="btn-call-rect" 
+          role="button" 
+          aria-label="Call Now"
+        >
+          <span>📞</span> Call Now
+        </a>
+
+        <!-- Clear Selection Button -->
+        <button 
+          type="button" 
+          id="btnClearSelection" 
+          class="btn-clear-selection" 
+          title="Reset your selected items"
+        >
+          Clear
+        </button>
+      </div>
+    </div>
+  </aside>
+
+  <!-- 4. Footer & Location -->
+  <footer class="site-footer" id="locationFooter" role="contentinfo">
+    <div class="footer-container">
+      <div class="footer-main-grid">
+        
+        <!-- Left: Address & Timings Information -->
+        <div class="footer-info-col">
+          <div>
+            <h3 class="footer-brand-title">New Madina Bakery</h3>
+            <span class="footer-brand-badge">The King of Rusk</span>
+          </div>
+
+          <div class="footer-location-card">
+            <div class="footer-detail-row">
+              <span class="footer-detail-icon">📍</span>
+              <div class="footer-detail-text">
+                <strong>Bakery Location</strong>
+                Address: Shop no, M, 3 Block, Block M North Nazimabad Town, Karachi, 74600
+              </div>
+            </div>
+
+            <div class="footer-detail-row">
+              <span class="footer-detail-icon">⏰</span>
+              <div class="footer-detail-text">
+                <strong>Operational Hours</strong>
+                Timings: 6:30 AM to 1:30 AM - Open Monday to Sunday
+              </div>
+            </div>
+
+            <div class="footer-detail-row">
+              <span class="footer-detail-icon">📞</span>
+              <div class="footer-detail-text">
+                <strong>Instant Orders &amp; Queries</strong>
+                Telephone: +92 300 0000000 &bull; WhatsApp Available
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right: Visual Map Embed -->
+        <div class="footer-map-col">
+          <h4 class="footer-map-title">Find Us in North Nazimabad</h4>
+          <div class="map-embed-wrapper">
+            <iframe 
+              class="map-embed-iframe"
+              src="https://maps.google.com/maps?q=Block+M+North+Nazimabad+Karachi+74600&t=&z=15&ie=UTF8&iwloc=&output=embed" 
+              title="New Madina Bakery Location Map - Block M North Nazimabad, Karachi"
+              loading="lazy" 
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Footer Bottom Bar -->
+      <div class="footer-bottom-bar">
+        <p>&copy; 2026 New Madina Bakery - The King of Rusk. All rights reserved.</p>
+        <div class="footer-bottom-links">
+          <a href="#hero">Back to Top &uarr;</a>
+          <a href="#menuCatalog">View Menu</a>
+          <a href="tel:+923000000000">Call Bakery</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Application Interaction Logic -->
+  <script src="app.js"></script>
+</body>
+</html>
